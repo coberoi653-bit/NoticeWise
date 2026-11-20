@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NoticeWise | AI Notice Interpreter</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="shell">
+<aside class="sidebar"><div class="brand"><span class="logo">N</span><div><b>NoticeWise</b><small>AI notice interpreter</small></div></div>
+<p class="nav-label">WORKSPACE</p><button class="nav active" id="newBtn">✦ &nbsp; New analysis</button><button class="nav" id="historyBtn">◷ &nbsp; Notice history</button>
+<div class="side-note"><span>✧</span><b>Less confusion.<br>More clarity.</b><p>Turn long announcements into simple next steps.</p></div></aside>
+<main><header><div><span class="eyebrow">YOUR PERSONAL NOTICE ASSISTANT</span><h1>Understand every notice.</h1><p>Paste a college or organization notice. Get the important details in seconds.</p></div><span class="online"><i></i> Workspace</span></header>
+<section id="workspace" class="layout"><div class="left">
+<div class="panel"><div class="panel-head"><div><span class="step">01 / INPUT</span><h2>Paste your notice</h2><p>Use the original text to keep the analysis accurate.</p></div><span class="doc">▤</span></div>
+<textarea id="noticeText" maxlength="11000" placeholder="Paste your college notice, circular, announcement or instructions here..."></textarea>
+<div class="input-meta"><span id="count">0 characters</span><button id="sampleBtn" class="link">Try sample notice ↗</button></div>
+<button id="analyzeBtn" class="primary">✦ &nbsp; Simplify this notice <span>→</span></button><p class="privacy">AI-generated results can be incorrect. Always verify important details.</p><p id="message" class="message"></p></div>
+<div id="result" class="result hidden"><div class="result-title"><div><span class="step">02 / NOTICE BREAKDOWN</span><h2 id="title">Analysis</h2></div><span class="ai">✦ Gemini AI</span></div>
+<div class="summary"><label>IN SIMPLE WORDS</label><p id="summary"></p></div>
+<div class="grid"><article><label>IMPORTANT DATES</label><p id="deadlines"></p></article><article><label>WHO CAN APPLY?</label><p id="eligibility"></p></article><article><label>DOCUMENTS NEEDED</label><p id="documents"></p></article></div>
+<div class="checklist"><label>YOUR ACTION CHECKLIST</label><pre id="actions"></pre></div><details><summary>View original notice</summary><p id="original" class="original"></p></details></div>
+</div><aside class="right"><div class="feature"><span>✦</span><h3>Clarity starts here.</h3><p>NoticeWise highlights what matters, so you can focus on what to do next.</p><hr><small>BUILT FOR STUDENTS & BUSY TEAMS</small></div>
+<div class="recent"><div class="recent-head"><b>Recent notices</b><button id="refreshBtn">↻</button></div><div id="recentList" class="recent-list">Your analyzed notices will appear here.</div></div></aside></section>
+<section id="historyPage" class="panel hidden"><span class="step">SAVED WORKSPACE</span><h2>Notice history</h2><p>Revisit the notices you have analyzed.</p><div id="allHistory"></div></section>
+<footer>NOTICEWISE <span>AI-assisted notice understanding</span></footer></main></div><script src="app.js"></script></body></html>
